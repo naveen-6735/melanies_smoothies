@@ -1,10 +1,7 @@
 # Import python packages
 import streamlit as st
 import requests
-import http
-from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
-from requests.exceptions import ConnectionError
 
 
 # Write directly to the app
