@@ -2,6 +2,7 @@
 import streamlit as st
 st.title("My Parents New Healthy Diner")
 import requests
+import snowflake.connector
 from snowflake.snowpark.functions import col
 
 
