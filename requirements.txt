@@ -9,12 +9,3 @@ snowflake-snowpark-python==1.5.1
 pandas==2.0.3
 
 
-#name: app_environment
-pip install snowflake-snowpark-python
-
-channels:
-  - snowflake
-dependencies:
-  - python=3.8.*
-  - snowflake-snowpark-python=
-  - streamlit=
