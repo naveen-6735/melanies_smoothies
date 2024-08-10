@@ -5,6 +5,10 @@ import requests
 from snowflake.snowpark.functions import col
 from requests.exceptions import ConnectionError
 import pandas as pd
+import streamlit as st
+
+st.write(f"Pandas version: {pd.__version__}")
+st.write(f"Streamlit version: {st.__version__}")
 
 # Write directly to the app
 st.title(":cup_with_straw: Customize Your Smoothie!:cup_with_straw:")
