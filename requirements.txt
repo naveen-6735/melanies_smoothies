@@ -5,7 +5,7 @@ requests
 
 
 
-name: app_environment
+#name: app_environment
 pip install snowflake-snowpark-python
 
 channels:
