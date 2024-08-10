@@ -4,6 +4,7 @@ import requests
 #from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 from requests.exceptions import ConnectionError
+import pandas as pd
 
 
 # Write directly to the app
