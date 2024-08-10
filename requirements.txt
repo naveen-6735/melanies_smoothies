@@ -3,6 +3,10 @@ snowflake-snowpark-python
 streamlit
 requests
 
+streamlit==1.24.0
+requests==2.31.0
+snowflake-snowpark-python==1.5.1
+pandas==2.0.3
 
 
 #name: app_environment
