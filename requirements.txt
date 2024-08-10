@@ -1,4 +1,6 @@
 name: app_environment
+pip install snowflake-snowpark-python
+
 channels:
   - snowflake
 dependencies:
