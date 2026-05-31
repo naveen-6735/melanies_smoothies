@@ -1,0 +1,34 @@
+<div class="oj-flex">
+  <h1 class="oj-header oj-flex-item oj-sm-12 oj-md-12">ORDS CRUD</h1>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout user-assistance-density="compact" label-edge="start">
+      <oj-input-number label-hint="Number"
+        converter='[[ new $imports.ojConverterNumber.IntlNumberConverter({"useGrouping":false}) ]]'
+        value="{{ $variables.Pg_var.num }}"></oj-input-number>
+      <oj-input-text label-hint="Name" value="{{ $variables.Pg_var.name }}"></oj-input-text>
+      <oj-input-date label-hint="Date" value="{{ $variables.Pg_var.dob }}"></oj-input-date>
+      <oj-input-text virtual-keyboard="email"
+        validators='[{"type":"regexp", "options":{"pattern":"([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})", "hint":"Enter an email address.", "messageDetail": "Value must be of the form xxx@xxx.xx"}}]'
+        label-hint="Email" value="{{ $variables.Pg_var.email }}"></oj-input-text>
+    </oj-form-layout>
+  </div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-2">
+    <oj-button label="Delete" on-oj-action="[[$listeners.buttonAction]]"></oj-button>
+  </div>
+  <div class="oj-flex-item oj-sm-12 oj-md-2"></div>
+  <div class="oj-flex-item oj-sm-12 oj-md-2">
+    <oj-button label="Update" on-oj-action="[[$listeners.buttonAction2]]"></oj-button>
+  </div>
+  <div class="oj-flex-item oj-sm-12 oj-md-2"></div>
+  <div class="oj-flex-item oj-sm-12 oj-md-2">
+    <oj-button label="Create" on-oj-action="[[$listeners.buttonAction3]]"></oj-button>
+  </div>
+  <div class="oj-flex-item oj-sm-12 oj-md-2">
+    <oj-button label="Search" on-oj-action="[[$listeners.buttonAction4]]"></oj-button>
+  </div>
+</div>
+
